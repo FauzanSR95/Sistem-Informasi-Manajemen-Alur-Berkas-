@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-bpn-primary {
+        @apply bg-bpn-gold text-bpn-brown font-semibold py-3 px-10 rounded-full border-2 border-bpn-gold uppercase tracking-wider transition-all duration-300 hover:bg-transparent hover:text-bpn-gold;
+    }
+    .btn-bpn-secondary {
+        @apply bg-transparent text-bpn-brown font-semibold py-3 px-10 rounded-full border-2 border-bpn-gold uppercase tracking-wider transition-all duration-300 hover:bg-bpn-gold hover:text-bpn-brown;
+    }
+    .reveal-section {
+        @apply opacity-0 translate-y-12 transition-all duration-1000 ease-out;
+    }
+    .reveal-section.is-visible {
+        @apply opacity-100 translate-y-0;
+    }
+}
